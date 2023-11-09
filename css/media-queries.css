@@ -76,5 +76,9 @@
     .content-img__bg.graphic{
         background-image: url(../images/desktop/image-graphic-design.jpg);
     }
+
+    main .hero-section .hero-container__btn h2{
+        font-size: 46px;
+    }
     
 }
