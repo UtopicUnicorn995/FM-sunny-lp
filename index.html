@@ -6,44 +6,120 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="box balance-container">
-  <div class="box-text">
-    My balance
-    <span>$921.48</span>
-  </div>
-  <div class="box-circle">
-    <div class="circle circle-light"></div>
-    <div class="circle circle-dark"></div>
-  </div>
-</div>
-<div class="box chart-container">
-  <h2>
-    Spending - Last 7 days
-  </h2>
-  <div class="bars-container">
-  </div>
-  <div class="expense-container">
-    <p>
-      Total this month
-      <span>$478.33</span>
-    </p>
-    <p class="small">
-      <span>+2.4%</span>
-      from last month
-    </p>
-  </div>
-</div>
-  <script src="script.js">
-  </script>
+  <header>
+    <h1>
+      sunnyside
+    </h1>
+    <nav>
+            <div class="hamburger-lines active">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div> 
+      <ul class="nav-list">
+        <li class="nav-item">About</li>
+        <li class="nav-item">Services</li>
+        <li class="nav-item">Projects</li>
+        <li class="nav-item">Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <img src="./images/mobile/image-header.jpg" alt="">
+      <div class="hero-container__btn">
+        <h2>We are creatives</h2>
+        <img src="./images/icon-arrow-down.svg" class="hero-arrow" alt="Arrow down">
+      </div>
+      
+    </section>
+    <section class="contents">
+      <div class="content-container">
+        <div class="content">
+
+          <h3>Transform your brand</h3>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <div class="content-btn yellow">Learn more</div>
+        </div>
+        <div class="content-img">
+          <img src="./images/mobile/image-transform.jpg" alt="Orange Image">
+        </div>
+      </div>
+
+      <div class="content-container">
+        <div class="content">
+
+          <h3>Stand out to the right audience</h3>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <div class="content-btn redish">Learn more</div>
+        </div>
+        <div class="content-img">
+          <img src="./images/mobile/image-stand-out.jpg" alt="Orange Image">
+        </div>
+      </div>
+
+      
+      <div class="content-container art-style">
+        <div class="content-img__bg graphic">
+          <h4>Graphic design</h4>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="content-img__bg photography">
+          <h4>Photography</h4>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h3 class="testimonial-title">
+        Client testimonials
+      </h3>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <img src="./images/image-emily.jpg" alt="Emily">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="testimonial-name__container">
+            <p>Emily R.</p>
+            <p>Marketing Director</p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <img src="./images/image-thomas.jpg" alt="Thomas">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="testimonial-name__container">
+            <p>Thomas S.</p>
+            <p>Chief Operating Officer</p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <img src="./images/image-jennie.jpg" alt="Jennie">
+          <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="testimonial-name__container">
+            <p>Jennie F.</p>
+            <p>Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ <footer>
+  <p>sunnyside</p>
+  <ul>
+    <li>About</li>
+    <li>Services</li>
+    <li>Projects</li>
+    <li>Contact</li>
+  </ul>
+ </footer>
+ <script src="script.js"></script>
 </body>
 </html>
