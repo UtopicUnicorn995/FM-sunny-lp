@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    row-gap: 20px;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.box{
+    width: 100%;
+    max-width: 480px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+span{
+    display: block;
+    font-weight: bold;
+}
+
+.balance-container{
+    background-color: hsl(10, 79%, 65%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-container{
+    background-color: hsl(33, 100%, 98%);
+}
+
+.box-circle{
+    position: relative;
+    left: -15px;
+    height: 50px;
+    width: 50px;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.circle-light{
+    background-color: transparent;
+    border: 2px solid white;
+    left: -12px;
+    z-index: 2;
+}
+
+.circle-dark{
+    background-color: hsl(25, 47%, 15%);
+    left: 12px;
+}
+
+.box-text{
+    font-size: 14px;
+}
+
+.box-text span{
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.bars-container{
+    padding: 10px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bar-cont {
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-cont p{
+    color: hsl(28, 10%, 53%);
+}
+
+.bar{
+    width: 30px;
+    height: 30px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 2px 2px 0 0;
+}
+
+.expense-container{
+    border-top: 2px solid hsl(27, 66%, 92%);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expense-container p{
+    font-size: 14px;
+    color:  hsl(28, 10%, 53%);
+}
+
+.expense-container p span{
+    font-size: 32px;
+    color: hsl(25, 47%, 15%);
+}
+
+.expense-container .small span{
+    text-align: end;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 22px;
+    color: hsl(25, 47%, 15%);
+}
+
+.amount{
+    font-size: 10px;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    padding: 3px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.d-none{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .bar-cont{
+        width: 45px;
+    }
+
+    .amount{
+        width: 45px;
+        font-size: 12px;
+    }
+
+    .bar{
+        width: 35px;
+    }
+}
