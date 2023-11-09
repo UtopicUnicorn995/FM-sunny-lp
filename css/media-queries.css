@@ -68,4 +68,13 @@
     .content-img__bg{
         min-height: 700px;
     }
+
+    .content-img__bg.photography{
+        background-image: url(../images/desktop/image-photography.jpg);
+    }
+    
+    .content-img__bg.graphic{
+        background-image: url(../images/desktop/image-graphic-design.jpg);
+    }
+    
 }
