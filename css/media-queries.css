@@ -1,0 +1,71 @@
+
+@media (min-width: 768px) {
+    header .hamburger-lines{
+        display: none;
+    }
+    header nav .nav-list{
+        margin-top: 0;
+        background-color: transparent;
+        flex-direction: row;
+        position: static;
+        transform: none;
+        padding: 0;
+    }
+
+    header nav .nav-list .nav-item{
+        color: var(--white);
+    }
+    header nav .nav-list::after{
+        content: none;
+    }
+    .hero-img{
+        content: url(../images/desktop/image-header.jpg);
+    }
+    .content-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content-container.art-style{
+        flex-direction: row;
+    }
+
+    .content-container > *{
+        width: 50%;
+    }
+
+    .content{
+        padding: 20px 80px;
+    }
+
+    .content-container img{
+        height: 100%;
+    }
+
+    .content-container.peach-bg{
+        flex-direction: row-reverse;
+    }
+
+    .content-container .content{
+        justify-content: center;
+    }
+
+    .content-img__bg{
+        padding: 20px 50px 90px 50px;
+    }
+
+    .testimonial-container{
+        flex-direction: row;
+    }
+
+    .testimonial-container  .testimonial{
+        padding: 20px;
+    }
+
+    .food-collection img{
+        width: 25%;
+    }
+    .content-img__bg{
+        min-height: 700px;
+    }
+}

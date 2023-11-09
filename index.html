@@ -8,7 +8,8 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media-queries.css">
 </head>
 <body>
   <header>
@@ -16,12 +17,12 @@
       sunnyside
     </h1>
     <nav>
-            <div class="hamburger-lines active">
+            <div class="hamburger-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
               <span class="line line3"></span>
             </div> 
-      <ul class="nav-list">
+      <ul class="nav-list" style="display: none;">
         <li class="nav-item">About</li>
         <li class="nav-item">Services</li>
         <li class="nav-item">Projects</li>
@@ -31,15 +32,15 @@
   </header>
   <main>
     <section class="hero-section">
-      <img src="./images/mobile/image-header.jpg" alt="">
+      <img class="hero-img" src="./images/mobile/image-header.jpg" alt="">
       <div class="hero-container__btn">
         <h2>We are creatives</h2>
-        <img src="./images/icon-arrow-down.svg" class="hero-arrow" alt="Arrow down">
+        <a href="#contents"><img src="./images/icon-arrow-down.svg" class="hero-arrow" alt="Arrow down"></a>
       </div>
       
     </section>
-    <section class="contents">
-      <div class="content-container">
+    <section class="contents" id='contents'>
+      <div class="content-container yellow-bg">
         <div class="content">
 
           <h3>Transform your brand</h3>
@@ -52,7 +53,7 @@
         </div>
       </div>
 
-      <div class="content-container">
+      <div class="content-container peach-bg">
         <div class="content">
 
           <h3>Stand out to the right audience</h3>
@@ -86,8 +87,8 @@
           <img src="./images/image-emily.jpg" alt="Emily">
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
           <div class="testimonial-name__container">
-            <p>Emily R.</p>
-            <p>Marketing Director</p>
+            <p class="testimonial-name">Emily R.</p>
+            <p class="testimonial-position">Marketing Director</p>
           </div>
         </div>
 
@@ -95,8 +96,8 @@
           <img src="./images/image-thomas.jpg" alt="Thomas">
           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
           <div class="testimonial-name__container">
-            <p>Thomas S.</p>
-            <p>Chief Operating Officer</p>
+            <p class="testimonial-name">Thomas S.</p>
+            <p class="testimonial-position">Chief Operating Officer</p>
           </div>
         </div>
 
@@ -104,20 +105,32 @@
           <img src="./images/image-jennie.jpg" alt="Jennie">
           <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <div class="testimonial-name__container">
-            <p>Jennie F.</p>
-            <p>Business Owner</p>
+            <p class="testimonial-name">Jennie F.</p>
+            <p class="testimonial-position">Business Owner</p>
           </div>
         </div>
       </div>
     </section>
+    <div class="food-collection">
+      <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+      <img src="./images/mobile/image-gallery-orange.jpg" alt="Orange slice">
+      <img src="./images/mobile/image-gallery-cone.jpg" alt="Ice cream cone">
+      <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
+    </div>
   </main>
  <footer>
   <p>sunnyside</p>
-  <ul>
+  <ul class="footer-nav">
     <li>About</li>
     <li>Services</li>
     <li>Projects</li>
-    <li>Contact</li>
+  </ul>
+
+  <ul class="footer-socials">
+    <li><img src="./images/icon-facebook.svg" alt="Facebook Logo"></li>
+    <li><img src="./images/icon-instagram.svg"  alt="Instagram Logo"></li>
+    <li><img src="./images/icon-twitter.svg" alt="Twitter Logo"></li>
+    <li><img src="./images/icon-pinterest.svg" alt="Pinterest Logo"></li>
   </ul>
  </footer>
  <script src="script.js"></script>
