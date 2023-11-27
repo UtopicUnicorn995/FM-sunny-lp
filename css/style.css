@@ -9,7 +9,7 @@
     --dark-saturated-blue: hsl(212, 27%, 19%);
     --very-dark-blue:  hsl(213, 9%, 39%);
     --dark-greyish-blue: hsl(210, 4%, 67%);
-    --white: hsl(0, 0%, 100%) ;
+    --white: hsl(0, 8%, 97%) ;
     --moderate-cyan: rgb(133, 230, 211);
 }
 
@@ -29,6 +29,7 @@
 body{
     min-height: 100vh;
     position: relative;
+    background-color: var(--white);
 }
 
 img{
